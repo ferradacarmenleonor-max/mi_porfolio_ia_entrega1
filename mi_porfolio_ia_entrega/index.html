@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Disfruta con cuentos, canciones, videos y galería creados con IA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/29c3be7601.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/estilos.css" />
+</head>
+<body data-page="inicio">
+  <header>
+    <div class="container header__content">
+      <a href="./index.html" class="logo">
+        <img src="./assets/logo.png" alt="Logo Carmela & Daniela">
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav id="mainNav" class="nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="./index.html" class="active">Inicio</a></li>
+          <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
+          <li><a href="./pages/cuentos-canciones.html">Cuentos & Canciones</a></li>
+          <li><a href="./pages/peliculas-galeria.html">Películas & Galería</a></li>
+          <li><a href="./pages/contactos.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero__text">
+        <h1>Bienvenidos a Carmela & Daniela</h1>
+        <p>Historias, canciones y recuerdos visuales para disfrutar en familia, desde cualquier dispositivo, con IA y un trabajo consciente basado en principios éticos.</p>
+        <div class="hero__cta">
+          <a class="btn" href="./pages/cuentos-canciones.html">Explorar cuentos y canciones</a>
+          <a class="btn btn--outline" href="./pages/peliculas-galeria.html">Ver películas y galería</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards container">
+      <article class="card">
+        <h3>Sobre nosotros</h3>
+        <p>Conoce nuestra misión, valores y el corazón detrás del proyecto.</p>
+        <a class="link" href="./pages/sobre-nosotros.html">Leer más →</a>
+      </article>
+      <article class="card">
+        <h3>Cuentos & Canciones</h3>
+        <p>Una selección de relatos y melodías para aprender jugando.</p>
+        <a class="link" href="./pages/cuentos-canciones.html">Abrir sección →</a>
+      </article>
+      <article class="card">
+        <h3>Contacto</h3>
+        <p>¿Dudas, ideas o saludos? ¡Escríbenos, nos encantará leerte!</p>
+        <a class="link" href="./pages/contactos.html">Ir a contacto →</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <ul class="footer__icons">
+      <li><a href="https://www.facebook.com/share/1DuAQbChgG" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="https://www.instagram.com/carmenferradaok/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="https://www.youtube.com/@carmenleonorferrada3394" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+      <li><a href="https://api.whatsapp.com/send?phone=542604270052" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+      <li><a href="https://ar.linkedin.com/in/carmen-ferrada-b4b2a898" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+    </ul>
+
+    <ul class="footer__menu">
+      <li><a href="./index.html">Inicio</a></li>
+      <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
+      <li><a href="./pages/cuentos-canciones.html">Cuentos & Canciones</a></li>
+      <li><a href="./pages/peliculas-galeria.html">Películas & Galería</a></li>
+      <li><a href="./pages/contactos.html">Contacto</a></li>
+    </ul>
+
+    <p>© <span id="year"></span> Carmela & Daniela. Todos los derechos reservados 2025.</p>
+  </footer>
+
+  <script>
+    // año automático
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // menú hamburguesa
+    const navToggle = document.getElementById("navToggle");
+    const mainNav = document.getElementById("mainNav");
+    navToggle.addEventListener("click", () => {
+      mainNav.classList.toggle("active");
+      navToggle.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>
+
